@@ -28,6 +28,6 @@ The site deploys through `.github/workflows/deploy-pages.yml` from the Arena wor
 
 - Fully responsive layouts for mobile, tablet, and desktop
 - Product and campaign imagery created specifically for this project
-- The supplied Olfact SVG is the only icon used throughout the interface
+- Refined uniform line-style icons for navigation and shopping bag complement the Olfact mark
 - Keyboard-accessible navigation, bag drawer, forms, filters, and reduced-motion support
 - Shopping bag state persists in `localStorage`

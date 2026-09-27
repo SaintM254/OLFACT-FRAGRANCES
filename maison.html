@@ -18,7 +18,6 @@
 </head>
 <body data-page="maison">
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <div class="announcement">Complimentary discovery vial with every 50 ml fragrance</div>
 
   <header class="site-header">
     <div class="header-inner">
@@ -26,16 +25,39 @@
         <a href="collection.html">Collection</a>
         <a href="collection.html#notes">Scent notes</a>
       </nav>
-      <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mobile-navigation">Menu</button>
+      <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="Open menu">
+        <svg class="header-icon header-icon--menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+        <span class="sr-only">Menu</span>
+      </button>
       <a class="brand" href="index.html" aria-label="Olfact Fragrances home">
         <span class="mark-icon" aria-hidden="true"></span>
         <span><span class="brand-word">OLFACT</span><span class="brand-sub">FRAGRANCES</span></span>
       </a>
       <nav class="header-nav header-nav--right" aria-label="Secondary navigation">
         <a href="maison.html" aria-current="page">Our maison</a>
-        <button class="header-action js-bag-open" type="button" aria-haspopup="dialog">Bag <span class="bag-count">0</span></button>
+        <button class="header-action js-bag-open" type="button" aria-haspopup="dialog" aria-label="Shopping bag">
+          <svg class="header-icon header-icon--bag" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="bag-label sr-only">Bag</span>
+          <span class="bag-count">0</span>
+        </button>
       </nav>
-      <button class="header-action mobile-bag js-bag-open" type="button" aria-haspopup="dialog"><span class="bag-label">Bag</span><span class="bag-count">0</span></button>
+      <button class="header-action mobile-bag js-bag-open" type="button" aria-haspopup="dialog" aria-label="Shopping bag">
+        <svg class="header-icon header-icon--bag" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="bag-label sr-only">Bag</span>
+        <span class="bag-count">0</span>
+      </button>
     </div>
   </header>
 
