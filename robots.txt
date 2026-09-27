@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saintm254.github.io/OLFACT-FRAGRANCES/sitemap.xml
