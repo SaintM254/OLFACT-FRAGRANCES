@@ -3,6 +3,7 @@ name: Deploy Olfact to GitHub Pages
 on:
   push:
     branches:
+      - main
       - arena/01a0e273-olfact-fragrances
   workflow_dispatch:
 

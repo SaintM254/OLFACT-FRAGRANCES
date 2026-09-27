@@ -20,7 +20,7 @@ Then visit `http://localhost:4173`.
 
 ## GitHub Pages
 
-The site deploys through `.github/workflows/deploy-pages.yml` from the Arena working branch.
+The site deploys through `.github/workflows/deploy-pages.yml` from the Arena working branch and after merge to `main`.
 
 **Live URL:** [saintm254.github.io/OLFACT-FRAGRANCES](https://saintm254.github.io/OLFACT-FRAGRANCES/)
 
