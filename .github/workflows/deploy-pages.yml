@@ -1,0 +1,45 @@
+name: Deploy Olfact to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - arena/01a0e273-olfact-fragrances
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Configure Pages
+        id: pages
+        continue-on-error: true
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Pages setup notice
+        if: steps.pages.outcome == 'failure'
+        run: echo "::notice title=One-time Pages setup needed::In Settings → Pages, choose GitHub Actions as the source, then rerun this workflow."
+      - name: Upload site
+        if: steps.pages.outcome == 'success'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy
+        if: steps.pages.outcome == 'success'
+        id: deployment
+        uses: actions/deploy-pages@v4

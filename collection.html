@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#211b18">
+  <meta name="description" content="Explore the complete Olfact fragrance collection — four evocative eau de parfums and a discovery wardrobe for sampling on skin.">
+  <meta property="og:title" content="The Olfact Collection">
+  <meta property="og:description" content="Four intimate, genderless fragrances made to live close to the skin.">
+  <meta property="og:image" content="assets/images/no-04-iris.jpg">
+  <meta property="og:type" content="website">
+  <title>The Collection — Olfact Fragrances</title>
+  <link rel="icon" href="assets/olfact-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="collection">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="announcement">Complimentary discovery vial with every 50 ml fragrance</div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="header-nav" aria-label="Primary navigation">
+        <a href="collection.html" aria-current="page">Collection</a>
+        <a href="#notes">Scent notes</a>
+      </nav>
+      <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mobile-navigation">Menu</button>
+      <a class="brand" href="index.html" aria-label="Olfact Fragrances home">
+        <span class="mark-icon" aria-hidden="true"></span>
+        <span><span class="brand-word">OLFACT</span><span class="brand-sub">FRAGRANCES</span></span>
+      </a>
+      <nav class="header-nav header-nav--right" aria-label="Secondary navigation">
+        <a href="maison.html">Our maison</a>
+        <button class="header-action js-bag-open" type="button" aria-haspopup="dialog">Bag <span class="bag-count">0</span></button>
+      </nav>
+      <button class="header-action mobile-bag js-bag-open" type="button" aria-haspopup="dialog"><span class="bag-label">Bag</span><span class="bag-count">0</span></button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-nav-head">
+      <a class="brand" href="index.html" aria-label="Olfact Fragrances home"><span class="mark-icon" aria-hidden="true"></span><span class="brand-word">OLFACT</span></a>
+      <button class="mobile-nav-close" type="button">Close</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html">Home</a>
+      <a href="collection.html" aria-current="page">Collection</a>
+      <a href="maison.html">Our maison</a>
+    </div>
+    <div class="mobile-nav-foot"><span>Nairobi</span><span>Grasse</span><span>Est. 2024</span></div>
+  </nav>
+
+  <main id="main-content">
+    <section class="collection-mast" aria-labelledby="collection-title">
+      <div class="collection-mast-copy">
+        <span class="eyebrow">Olfactory studies · 01—04</span>
+        <h1 class="display-title" id="collection-title">The Olfact <em>archive.</em></h1>
+        <p>Fragrances as vivid as memory: floral smoke, green light, woods at dusk and the electric cool of orris. Each one wears differently. Each one is entirely yours.</p>
+      </div>
+      <div class="collection-mast-image">
+        <img src="assets/images/no-04-iris.jpg" alt="Iris Static fragrance bottle in cool violet light" fetchpriority="high">
+        <span class="collection-mast-caption">04 · Iris Static</span>
+      </div>
+    </section>
+
+    <div class="shell collection-toolbar" aria-label="Filter fragrances">
+      <div class="filter-list" role="group" aria-label="Scent family">
+        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All scents</button>
+        <button class="filter-button" type="button" data-filter="floral" aria-pressed="false">Floral</button>
+        <button class="filter-button" type="button" data-filter="green" aria-pressed="false">Green</button>
+        <button class="filter-button" type="button" data-filter="woody" aria-pressed="false">Woody</button>
+        <button class="filter-button" type="button" data-filter="amber" aria-pressed="false">Amber</button>
+        <button class="filter-button" type="button" data-filter="fresh" aria-pressed="false">Fresh</button>
+      </div>
+      <span class="result-count" aria-live="polite">4 compositions</span>
+    </div>
+
+    <section class="collection-products shell" aria-label="Fragrance collection">
+      <div class="product-grid">
+        <article class="product-card reveal" data-family="floral amber">
+          <div class="product-media">
+            <img src="assets/images/no-01-velours.jpg" alt="Velours fragrance bottle on oxblood stone" loading="lazy">
+            <span class="product-number">01</span>
+            <button class="product-quick-add" type="button" data-add-to-bag data-name="01 · Velours" data-price="168" data-image="assets/images/no-01-velours.jpg" data-size="Eau de parfum · 50 ml">Add 50 ml — $168</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-name">Velours</h2><span class="product-price">$168</span>
+            <p class="product-notes">Rose smoke · Benzoin · Suede</p>
+          </div>
+          <p class="product-description">A dark rose seen through incense. Saffron glows at the edges before resin, skin musk and soft suede settle close.</p>
+        </article>
+
+        <article class="product-card reveal reveal-delay-1" data-family="green fresh">
+          <div class="product-media">
+            <img src="assets/images/no-02-figue.jpg" alt="Figue 15 fragrance bottle with fresh figs and a fig leaf" loading="lazy">
+            <span class="product-number">02</span>
+            <button class="product-quick-add" type="button" data-add-to-bag data-name="02 · Figue 15" data-price="156" data-image="assets/images/no-02-figue.jpg" data-size="Eau de parfum · 50 ml">Add 50 ml — $156</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-name">Figue 15</h2><span class="product-price">$156</span>
+            <p class="product-notes">Fig leaf · Salt air · Blonde woods</p>
+          </div>
+          <p class="product-description">Not the fruit, but the whole tree: snapped green stem, chalky bark, warm leaves and the salt carried inland by wind.</p>
+        </article>
+
+        <article class="product-card reveal" data-family="woody amber">
+          <div class="product-media">
+            <img src="assets/images/no-03-santal.jpg" alt="Santal Dusk fragrance bottle with sandalwood curls" loading="lazy">
+            <span class="product-number">03</span>
+            <button class="product-quick-add" type="button" data-add-to-bag data-name="03 · Santal Dusk" data-price="172" data-image="assets/images/no-03-santal.jpg" data-size="Eau de parfum · 50 ml">Add 50 ml — $172</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-name">Santal Dusk</h2><span class="product-price">$172</span>
+            <p class="product-notes">Sandalwood · Black tea · Tonka</p>
+          </div>
+          <p class="product-description">Creamy sandalwood held in shadow. Black tea, toasted sesame and tonka create a quiet warmth that lasts through the night.</p>
+        </article>
+
+        <article class="product-card reveal reveal-delay-1" data-family="floral fresh">
+          <div class="product-media">
+            <img src="assets/images/no-04-iris.jpg" alt="Iris Static fragrance bottle and violet iris on a mirrored plinth" loading="lazy">
+            <span class="product-number">04</span>
+            <button class="product-quick-add" type="button" data-add-to-bag data-name="04 · Iris Static" data-price="164" data-image="assets/images/no-04-iris.jpg" data-size="Eau de parfum · 50 ml">Add 50 ml — $164</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-name">Iris Static</h2><span class="product-price">$164</span>
+            <p class="product-notes">Orris · Violet leaf · Mineral musk</p>
+          </div>
+          <p class="product-description">Cool, tactile and quietly strange. Powdered orris meets wet stone, violet leaf and the charged air just before rain.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="sample-builder" id="discovery" aria-labelledby="builder-title">
+      <div class="shell sample-builder-inner">
+        <div class="sample-builder-copy reveal">
+          <span class="eyebrow">Discovery, your way</span>
+          <h2 class="section-title section-title--small" id="builder-title">Choose any three.</h2>
+          <p>Build a personal edit of three 2 ml atomisers. Wear each fragrance for a full day, then use your $18 credit toward a 50 ml bottle.</p>
+          <span class="sample-status" aria-live="polite">0 of 3 selected</span>
+          <button class="button button--paper sample-add-button" type="button" disabled>Choose three scents</button>
+        </div>
+        <div class="sample-options" role="group" aria-label="Choose three fragrance samples">
+          <button class="sample-option" type="button" data-sample="Velours" aria-pressed="false">
+            <span class="sample-option-image"><img src="assets/images/no-01-velours.jpg" alt="" loading="lazy"></span>
+            <span class="sample-option-copy"><span class="sample-option-title">01 · Velours</span><span class="sample-option-notes">Floral · Amber · Skin</span></span>
+            <span class="sample-option-state">Choose</span>
+          </button>
+          <button class="sample-option" type="button" data-sample="Figue 15" aria-pressed="false">
+            <span class="sample-option-image"><img src="assets/images/no-02-figue.jpg" alt="" loading="lazy"></span>
+            <span class="sample-option-copy"><span class="sample-option-title">02 · Figue 15</span><span class="sample-option-notes">Green · Fresh · Woody</span></span>
+            <span class="sample-option-state">Choose</span>
+          </button>
+          <button class="sample-option" type="button" data-sample="Santal Dusk" aria-pressed="false">
+            <span class="sample-option-image"><img src="assets/images/no-03-santal.jpg" alt="" loading="lazy"></span>
+            <span class="sample-option-copy"><span class="sample-option-title">03 · Santal Dusk</span><span class="sample-option-notes">Woody · Amber · Spiced</span></span>
+            <span class="sample-option-state">Choose</span>
+          </button>
+          <button class="sample-option" type="button" data-sample="Iris Static" aria-pressed="false">
+            <span class="sample-option-image"><img src="assets/images/no-04-iris.jpg" alt="" loading="lazy"></span>
+            <span class="sample-option-copy"><span class="sample-option-title">04 · Iris Static</span><span class="sample-option-notes">Floral · Fresh · Mineral</span></span>
+            <span class="sample-option-state">Choose</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes-section section-pad" id="notes" aria-labelledby="notes-title">
+      <div class="shell">
+        <div class="notes-intro reveal">
+          <div>
+            <span class="eyebrow">Inside the formulas</span>
+            <h2 class="section-title section-title--small" id="notes-title">A small scent lexicon.</h2>
+          </div>
+          <p class="lede">Materials are not a list of promises. On skin, they overlap, disappear and return. These four sit at the heart of our first chapter.</p>
+        </div>
+        <div class="notes-grid">
+          <article class="note-card reveal"><span class="note-card-index">MATERIAL · 01</span><h3>Orris</h3><p>The aged rhizome of iris. Cool, rooty and soft as powdered paper.</p></article>
+          <article class="note-card reveal reveal-delay-1"><span class="note-card-index">MATERIAL · 02</span><h3>Benzoin</h3><p>A golden resin with shades of vanilla, warm skin and old wood.</p></article>
+          <article class="note-card reveal"><span class="note-card-index">MATERIAL · 03</span><h3>Fig leaf</h3><p>Milky green, bitter at the stem, sun-warmed around the edges.</p></article>
+          <article class="note-card reveal reveal-delay-1"><span class="note-card-index">MATERIAL · 04</span><h3>Sandalwood</h3><p>Creamy, meditative and quietly radiant with a lasting warmth.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Olfact Fragrances home">
+          <span class="mark-icon" aria-hidden="true"></span>
+          <span><span class="brand-word">OLFACT</span><span class="brand-sub">FRAGRANCES</span></span>
+        </a>
+        <h2 class="footer-title">Letters on scent, memory and beautiful materials.</h2>
+        <form class="newsletter-form" data-newsletter-form>
+          <label class="sr-only" for="email-collection">Email address</label>
+          <input id="email-collection" name="email" type="email" autocomplete="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="form-message" aria-live="polite"></p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-link-group"><h3>Explore</h3><a href="collection.html">All fragrances</a><a href="#discovery">Discovery wardrobe</a><a href="maison.html">Our maison</a></div>
+        <div class="footer-link-group"><h3>Visit</h3><span>19 Kijabe Street</span><span>Nairobi, Kenya</span><a href="mailto:bonjour@olfactfragrances.com">Book an appointment</a></div>
+        <div class="footer-link-group"><h3>Care</h3><a href="mailto:care@olfactfragrances.com">Contact</a><a href="maison.html#stockists">Stockists</a><span>Shipping & returns</span></div>
+        <div class="footer-link-group"><h3>Follow</h3><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.pinterest.com/" target="_blank" rel="noreferrer">Pinterest</a></div>
+      </div>
+    </div>
+    <div class="shell footer-bottom"><span>© <span data-current-year>2026</span> Olfact Fragrances</span><span>Composed between Nairobi and Grasse</span></div>
+  </footer>
+
+  <div class="drawer-scrim" data-drawer-scrim></div>
+  <aside class="bag-drawer" role="dialog" aria-modal="true" aria-labelledby="bag-title" aria-hidden="true">
+    <div class="drawer-header"><h2 id="bag-title">Your bag</h2><button class="drawer-close" type="button">Close</button></div>
+    <div class="drawer-items" data-drawer-items></div>
+    <div class="drawer-footer" data-drawer-footer></div>
+  </aside>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
